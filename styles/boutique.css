@@ -1,0 +1,201 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;1,100&display=swap');
+
+* {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    text-decoration: none;
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+/*************Barre de recherche***********************/
+
+.recherche{
+    position: relative;
+}
+
+#name{
+    display: flex;
+    margin-top: 90px;
+    border: 1px solid black;
+    width: 70%;
+    padding: 30px;
+    margin-left: 5%;
+    border-radius: 15px;
+    height: 20px;
+}
+
+#name:active{
+    border: 1px solid rgb(93, 93, 130);
+}
+
+.box_panier{
+    position: sticky;
+}
+
+
+.recherche input{
+    font-size: 20px;
+}
+
+
+
+#panier{
+    height: 50px;
+    margin-left: 86%;
+    transform: translateY(-125%);
+
+}
+
+.bulle_achat{
+    background-color: rgb(39, 21, 21);
+    width: 50px;
+    height: 30px;
+    border-radius: 40px;
+    margin-left: 88%;
+    transform: translateY(-480%);
+}
+
+.nombre{
+
+    color: white;
+    padding-top: 8%;
+    font-weight: 900;
+    text-align: center;
+}
+
+/********Produit individualisé**********/
+
+
+.accueil_produit{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10ch;
+    padding: 70px;
+    padding-left: 10%;
+    margin-top : 15px;
+}
+
+.produit{
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    width: 300px;
+    height: 450px;
+}
+
+.pour_image{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.produit_img{
+    height: 150px;
+}
+
+.produit h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: inherit;
+}
+
+.produit p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.total_étoiles{
+    margin-top: 10px;
+    margin-left: 28%;
+}
+
+.total_étoiles img{
+    height: 20px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.price h3{
+    color: rgb(46, 46, 46);
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    font-size: 40px;
+}
+
+button{
+    position: absolute;
+    top: 86%;
+    left: 55%;
+    height: 55px;
+    width: 40%;
+    background-color:rgb(78, 43, 43);
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/**Pour la quantité */ 
+
+.box_quantité{
+    transform: translate(120%, 20%);
+    display: flex;
+    border-radius: 10px;
+    background-color:white;
+    border: 2px groove rgb(51, 43, 43);
+    width: 140px;
+    height: 35px;
+
+}
+
+.quantity{
+    font-size: 15px;
+    font-weight: 800;
+    transform: translate(15%,18%);
+    color: black;
+}
+
+.box_quantité input{
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 15px;
+    text-align: center;
+    transform: translate(40%,30%);
+    border: 1px solid grey
+
+}
+
+.notif_panier{
+    position: fixed;
+    font-size: 25px;
+    z-index: 3;
+    background-color: rgba(71, 90, 35, 0.658);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    left: 34%;
+    top: 2%;
+}
+
+
+
+/****Classe pour JS*/
+
+.disparition{
+    display: none;  
+}
+

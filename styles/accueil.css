@@ -1,0 +1,54 @@
+* {
+    overflow: hidden;
+}
+
+/* header {
+    border-bottom: 4px solid #daba95;
+} */
+
+
+
+.container_accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.container_accueil2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+
+#titre_accueil {
+    height: 150px;
+    width: auto;
+    padding: 80px;
+}
+
+#moustache_accueil {
+    height: 150px;
+    width: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+
+.icons{
+
+    height: 20px;
+    z-index: 2;
+}
+
+
+
+.accueil_apparition{
+    opacity: 2;
+    transition-duration: 2000ms
+}

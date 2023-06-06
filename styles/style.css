@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;1,100&display=swap");
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  font-family: poppins;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 65px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 10px 0 20px 0;
+  box-shadow: 0 3px 25px rgb(78, 76, 76);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#logo {
+  margin: 15px 0 0 20px;
+  height: 50px;
+  width: auto;
+}
+
+.pages {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.page {
+  color: black;
+  flex-wrap: wrap;
+  margin-left: 12%;
+}
+
+.page::after,
+.page::before {
+  content: "";
+  display: block;
+  height: 2.5px;
+  background-color: black;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.page:hover::after,
+.page:hover::before {
+  transform: scale(1);
+}
+
+b {
+  color: white;
+}
+
+footer {
+  width: 100%;
+  padding: 24px 0 25px 0;
+  background-color: black;
+  
+  display: flex;
+  justify-content: space-around;
+
+
+  /* display: grid;
+  grid-template-columns: 2fr 3fr 1fr; */
+
+  /* z-index: 2; */
+
+  /* box-shadow: 0 3px 25px rgb(78, 76, 76); */
+  /* font-family: 'Bebas Neue', sans-serif; */
+}
+
+footer p {
+  color: white;
+  font-family: poppins;
+  font-size: 12px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* pour les navigateurs Webkit (Safari, Chrome) */
+::-webkit-scrollbar {
+  width: 11px;
+  /* largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0e9e9; /* couleur de fond de la piste de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(
+    112,
+    67,
+    67
+  ); /* couleur de la poignée de la barre de défilement */
+  border-radius: 15px;
+}
+
+/* pour les navigateurs Firefox */
+::-moz-scrollbar {
+  width: 11px; /* largeur de la barre de défilement */
+}
+
+::-moz-scrollbar-track {
+  background: #f0e9e9; /* couleur de fond de la piste de la barre de défilement */
+}
+
+::-moz-scrollbar-thumb {
+  background: rgb(
+    112,
+    67,
+    67
+  ); /* couleur de la poignée de la barre de défilement */
+  border-radius: 15px;
+}

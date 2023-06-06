@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;1,100&display=swap');
+
+section {
+    font-family: poppins;
+
+    margin: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    transform: translateY(25px);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+
+    padding: 3.5rem 0 2rem 5%;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+a {
+    color: red;
+}
+
+header {
+    position: relative;
+}
+
+section img {
+    height: 300px;
+    width: auto;
+    border: solid 2px black;
+    border-radius: 15px;
+}
+
+.grid1, .grid3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid1_1 {
+    margin-right: 20px;
+}
+
+.grid1 img {
+    position: absolute;
+    right: 3%;
+
+    transition: fromright 10s;
+}
+
+.grid2, .grid4 {
+    display: grid;
+    grid-template-columns: 11fr 20fr;
+}
+
+.grid2 img {
+    transform: translateY(5px);
+}
+
+.grid3 img {
+    width: 350px;
+    height: auto;
+    transform: translateX(70px) translateY(0px);
+}
+
+
+@keyframes fromleft {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromright {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+section a{
+    color: brown;
+}
+
+section a {
+    font-weight: 700;
+}
+
+section a:hover{
+    text-decoration: underline;
+}

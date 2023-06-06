@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;1,100&display=swap');
+
+body{
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+p{
+    font-size: 22px;
+}
+
+.ensemble{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1250px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-family: poppins;
+}
+
+.ensemble img{
+    border-radius: 2%;
+}
+
+.partie_1{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+}
+
+
+.partie_3{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+}
+
+.partie_4{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+}
+
+.texte{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image{
+    border: solid 1px black;
+    border-radius: 2%;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.image p{
+    padding: 0px 14px 10px 14px;
+    font-size: 18px;
+}
+
+.image a{
+    color: brown;
+}
+
+.ensemble a {
+    font-weight: 700;
+}
+
+.ensemble a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Animation*/
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 0.15s ease-in forwards;
+}
+
+.fade-in:nth-child(1) {
+    animation-delay: 0.20s;
+}
+
+.fade-in:nth-child(2) {
+    animation-delay: 0.40s;
+}
+
+.fade-in:nth-child(3) {
+    animation-delay: .60s;
+}
+
+.fade-in:nth-child(4) {
+    animation-delay: 0.80s;
+}
+
+  
+@keyframes fade-in {
+    from {
+        opacity: 0; /* Début de l'animation */
+    }
+
+    to {
+        opacity: 1; /* Fin de l'animation */
+    }
+}
+
+
+/* On définit un style pour l'élément qui va être animé */
+.animate {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+/* On définit un style pour l'élément qui est déjà visible */
+  .visible {
+    opacity: 1;
+  }
+
+  footer {
+    transform: translateY(49px);
+  }
